@@ -300,10 +300,16 @@ List<CodeSnippet> swiftMediumSnippets = [
 
 List<CodeSnippet> swiftHardSnippets = [
   CodeSnippet(
-    '',
+    'Fill in the blanks to complete the code for the text widget',
     [
       CodeLine([
-        CodeSegment('', editable: true),
+        CodeSegment('Text', editable: true),
+        CodeSegment('(', editable: true),
+        CodeSegment('\'', editable: true),
+        CodeSegment('Text Widget'),
+        CodeSegment('\'', editable: true),
+        CodeSegment(')', editable: true),
+        CodeSegment(';', editable: true),
       ]),
     ],
   ),

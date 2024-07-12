@@ -106,6 +106,11 @@ class _CodeSnippetWidgetState extends State<CodeSnippetWidget> {
         _showGameOverDialog();
       }
       showIncorrect = true;
+      Timer(Duration(seconds: 1), () {
+        setState(() {
+          showIncorrect = false;
+        });
+      });
     });
   }
 
